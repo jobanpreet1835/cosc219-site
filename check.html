@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSC 219 — Lab 1 self-check</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 2rem auto;
+           max-width: 46rem; padding: 0 1rem; color: #12181F; }
+    h1 { font-size: 1.6rem; margin-bottom: .2rem; }
+    .sub { color: #6B7885; margin-top: 0; }
+    fieldset { border: 1px solid #DCE1E6; border-radius: 6px; padding: 1rem; }
+    legend { font-weight: 600; padding: 0 .4rem; }
+    label { display: block; font-size: .9rem; margin-top: .6rem; }
+    input[type=text] { width: 100%; padding: .45rem; border: 1px solid #B9C4CE;
+                       border-radius: 4px; font-family: monospace; font-size: .9rem; }
+    button { margin-top: 1rem; padding: .55rem 1.1rem; font-size: 1rem;
+             border: 0; border-radius: 5px; background: #1B7F5A; color: #fff; cursor: pointer; }
+    button:disabled { background: #B9C4CE; cursor: default; }
+    .page { margin-top: 1.6rem; border-top: 2px solid #12181F; padding-top: .6rem; }
+    .page h2 { font-size: 1.05rem; font-family: monospace; }
+    ul.res { list-style: none; padding: 0; }
+    ul.res li { padding: .28rem .5rem; border-bottom: 1px solid #EEF2F5; font-size: .92rem; }
+    .pass { color: #1B7F5A; } .fail { color: #A62B23; } .warn { color: #B9700A; }
+    .mark { font-family: monospace; font-weight: bold; display: inline-block; width: 3.4rem; }
+    .summary { margin-top: 1rem; padding: .7rem 1rem; border-left: 3px solid #2E5AAC;
+               background: #F4F6F7; font-size: .95rem; }
+    .note { background: #FBF1E4; border-left: 3px solid #B9700A;
+            padding: .7rem 1rem; margin-top: 1.2rem; font-size: .9rem; }
+  </style>
+</head>
+<body>
+
+<h1>Lab 1 — self-check</h1>
+<p class="sub">Checks most of the structural requirements. It is a helper, not the marker.</p>
+
+<div class="note">
+  <b>Put this file in your project folder.</b> Copy <code>check.html</code> and
+  <code>check.js</code> into the same folder as <code>index.html</code>, then open
+  <code>check.html</code> with Live Server. It loads your pages from the same
+  origin, so leave the box below as <code>./</code>.
+</div>
+
+<fieldset>
+  <legend>Your pages</legend>
+  <label for="base">Folder containing your pages</label>
+  <input type="text" id="base" value="./">
+  <button id="run" type="button">Run the checks</button>
+</fieldset>
+
+<div id="output"></div>
+
+<div class="note">
+  <b>Two things this cannot check.</b> It runs in your browser, so it cannot see
+  your commit history, and it cannot judge whether your <code>alt</code> text is
+  <em>meaningful</em> — only that it exists. It also does not replace the W3C
+  validator; run that too.
+</div>
+
+<script src="check.js"></script>
+</body>
+</html>
