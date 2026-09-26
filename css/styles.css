@@ -1,0 +1,47 @@
+:root {
+    --brand: #1b7f5a;
+    --ink: #12181f;
+    --muted: #6b7885;
+    --space: 1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--link);
+    line-height: 1.5;
+    margin: 0;
+}
+
+main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: var(--space);
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--brand);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: var(--brand);
+    text-decoration: none;
+    margin-right: var(--space);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus {
+    outline: 0.2rem solid var(--brand);
+    outline-offset: 0.2rem;
+}

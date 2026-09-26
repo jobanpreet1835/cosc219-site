@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <ink rel="stylesheet" href="css/styles.css"></ink>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Get in Touch</h2>
+
+        <form>
+
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="reason">Reason for contacting:</label><br>
+                <select id="reason" name="reason">
+                    <option value="question">Question</option>
+                    <option value="project">Project</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Preferred contact method</legend>
+
+                <input type="radio" id="contact-email" name="contact-method" value="email">
+                <label for="contact-email">Email</label>
+
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </fieldset>
+
+            <p>
+                <input type="checkbox" id="updates" name="updates">
+                <label for="updates">Send me updates</label>
+            </p>
+
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6"></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
