@@ -101,3 +101,30 @@ textarea:focus {
     outline: 0.2rem solid var(--brand);
     outline-offset: 0.2rem;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--space);
+}
+
+caption {
+    font-size: 1.5rem;
+    margin-bottom: var(--space);
+}
+
+th,
+td {
+    padding: var(--space);
+    border: 0.1rem solid var(--muted);
+    text-align: left;
+}
+
+th {
+    color: var(--ink);
+}
