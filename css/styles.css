@@ -45,3 +45,14 @@ nav a:focus {
     outline: 0.2rem solid var(--brand);
     outline-offset: 0.2rem;
 }
+
+.card {
+    border: 0.1rem solid var(--muted);
+    border-radius: 0.5rem;
+    padding:var(--space);
+    margin-bottom: var(--space);
+}
+
+input[type="email"] {
+    border-color: var(--brand);
+}
