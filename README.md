@@ -10,3 +10,13 @@ One thing I found difficult was setting up GitHub Pages and checking my HTML for
 
 AI Use:
 I used ChatGPT to help explain HTML concepts, GitHub Desktop steps, and understand validation errors.
+
+## Lab 2 Updates
+
+This week I added a contact page with a form and created a shared external stylesheet for all four pages.
+
+For styling, I used green as the main brand colour to keep the site simple and consistent.
+
+## AI Use
+
+I used ChatGPT for guidance and explanations while completing the lab. I wrote and reviewed the code myself.
