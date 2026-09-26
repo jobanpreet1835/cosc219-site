@@ -56,3 +56,48 @@ nav a:focus {
 input[type="email"] {
     border-color: var(--brand);
 }
+
+label {
+    color: var(--ink);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: var(--space);
+    margin-bottom: var(--space);
+    border: 0.1rem solid var(--muted);
+    border-radius: 0.4rem;
+}
+
+fieldset {
+    border: 0.1rem solid var(--muted);
+    border-radius: 0.4rem;
+    padding: var(--space);
+    margin-bottom: var(--space);
+}
+
+legend {
+    color: var(--brand);
+}
+
+button {
+    background-color: var(--brand);
+    color: white;
+    padding: var(--space);
+    border: none;
+    border-radius: 0.4rem;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 0.2rem solid var(--brand);
+    outline-offset: 0.2rem;
+}
