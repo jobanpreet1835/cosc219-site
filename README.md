@@ -20,3 +20,21 @@ For styling, I used green as the main brand colour to keep the site simple and c
 ## AI Use
 
 I used ChatGPT for guidance and explanations while completing the lab. I wrote and reviewed the code myself.
+
+## Lab 3 Updates
+
+In Lab 3, I made my website responsive so it works on different screen sizes.
+
+I used two breakpoints:
+
+38rem: To make the navigation horizontal and show two project cards in a row.
+
+58rem: To show three project cards in a row and give them more space.
+
+I used Flexbox for the navigation because it helps arrange links in a row. I used Grid for the project cards and About page to arrange content in columns.
+
+I tested my website at 320px, 768px, and 1280px. All 25 tests passed.
+
+AI Use
+
+I used ChatGPT to understand Flexbox, Grid, and media queries. It also helped me fix layout problems and understand the lab instructions.

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COSC 219 — Lab 2 self-check</title>
+  <title>COSC 219 — Lab 3 self-check</title>
   <style>
     body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 2rem auto;
-           max-width: 46rem; padding: 0 1rem; color: #12181F; }
+           max-width: 48rem; padding: 0 1rem; color: #12181F; }
     h1 { font-size: 1.6rem; margin-bottom: .2rem; }
     .sub { color: #6B7885; margin-top: 0; }
     fieldset { border: 1px solid #DCE1E6; border-radius: 6px; padding: 1rem; }
@@ -26,19 +26,22 @@
     .summary { margin-top: 1rem; padding: .7rem 1rem; border-left: 3px solid #2E5AAC;
                background: #F4F6F7; font-size: .95rem; }
     .note { background: #FBF1E4; border-left: 3px solid #B9700A;
-            padding: .7rem 1rem; margin-top: 1.2rem; font-size: .9rem; }
+            padding: .7rem 1rem; margin: 1.2rem 0; font-size: .9rem; }
+    #stage { position: absolute; left: -10000px; top: 0; }
+    #stage iframe { border: 0; height: 900px; }
   </style>
 </head>
 <body>
 
-<h1>Lab 2 — self-check</h1>
-<p class="sub">Checks the form, the stylesheet, and the no-layout constraint.</p>
+<h1>Lab 3 — self-check</h1>
+<p class="sub">Checks your layout CSS, and renders every page at three widths to
+look for horizontal overflow.</p>
 
 <div class="note">
   <b>Put this file in your project folder.</b> Copy <code>check.html</code> and
   <code>check.js</code> into the same folder as <code>index.html</code>, then open
-  <code>check.html</code> with Live Server. It loads your pages from the same
-  origin, so leave the box below as <code>./</code>.
+  <code>check.html</code> with Live Server. It needs to load your pages from the
+  same origin to measure them, so leave the box below as <code>./</code>.
 </div>
 
 <fieldset>
@@ -49,11 +52,13 @@
 </fieldset>
 
 <div id="output"></div>
+<div id="stage"></div>
 
 <div class="note">
-  <b>What this cannot judge.</b> Whether your spacing is consistent, whether your
-  colours are readable, or whether you chose sensible selectors. It also does not
-  replace the W3C HTML and CSS validators, or tabbing through the page yourself.
+  <b>What this cannot judge.</b> Whether your breakpoints are in sensible places
+  for <em>your</em> content, whether the layout actually looks good, or whether
+  Grid was the right choice over Flexbox. Resize a real browser window slowly and
+  look — that is still the real test.
 </div>
 
 <script src="check.js"></script>
