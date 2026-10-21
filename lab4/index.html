@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Guess — COSC 219 Lab 4</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="game.js" defer></script>
+  <script src="play.js" defer></script>
+</head>
+<body>
+
+  <main>
+    <h1>Word Guess</h1>
+
+    <p id="word" class="word">_____</p>
+    <p id="status" class="status">Press New game to start.</p>
+
+    <form id="guess-form">
+      <label for="guess">Your guess</label>
+      <input type="text" id="guess" name="guess" maxlength="1"
+             autocomplete="off" autocapitalize="off">
+      <button type="submit">Guess</button>
+      <button type="button" id="new-game">New game</button>
+    </form>
+
+    <p id="result" class="result"></p>
+  </main>
+
+</body>
+</html>
