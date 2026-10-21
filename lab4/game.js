@@ -189,3 +189,14 @@ function revealWord(word, guessedLetters) {
 function hasWon(word, guessedLetters) {
   return !revealWord(word, guessedLetters).includes("_");
 }
+
+// Part C - Question 1
+// Swapping these two lines does not change the game in the current code 
+// because livesAfterGuess() only uses lives and correct, so both values 
+// are updated before the game checks the win or lost condition.  
+
+// Part C - Question 1
+// isValidGuess() checks the input before the game processes it.
+// with invalid input, the game displays error message and return 
+// stops the function. So it stops invalid guesses from being 
+// recorded and affecting players lives.
