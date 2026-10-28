@@ -242,14 +242,14 @@ function summaryLines(trails) {
    ---------------------------------------------------------------------- */
 
 function report(trails) {
-  const open = openTrails(trails);
+    const open = openTrails(trails);
 
-  return {
-    total: trails.length,
-    open: open.length,
-    closed: trails.length - open.length,
-    openKm: openDistance(trails),
-    longestOpen: longestTrail(open)?.name ?? null,
-    byRating: countByRating(trails)
-  };
+    return {
+        total: trails.length,
+        open: open.length,
+        closed: trails.length - open.length,
+        openKm: openDistance(trails),
+        longestOpen: longestTrail(open)?.name ?? null,
+        byRating: countByRating(trails)
+    };
 }
