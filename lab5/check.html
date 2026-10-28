@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSC 219 — Lab 5 self-check</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.55; margin: 2rem auto;
+           max-width: 46rem; padding: 0 1rem; color: #12181F; }
+    h1 { font-size: 1.5rem; margin-bottom: .2rem; }
+    .sub { color: #6B7885; margin-top: 0; }
+    h2 { font-size: .95rem; font-family: monospace; color: #2E5AAC;
+         margin: 1.3rem 0 .3rem; border-bottom: 1px solid #DCE1E6; padding-bottom: .2rem; }
+    .res { margin: .15rem 0; font-family: monospace; font-size: .87rem; }
+    .pass { color: #1B7F5A; }
+    .fail { color: #A62B23; font-weight: 600; }
+    .summary { margin-top: 1.4rem; padding: .7rem 1rem; background: #F4F6F7;
+               border-left: 3px solid #2E5AAC; font-weight: 600; }
+    .note { background: #FBF1E4; border-left: 3px solid #B9700A;
+            padding: .7rem 1rem; margin-top: 1.2rem; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <h1>Lab 5 — self-check</h1>
+  <p class="sub">Every function tested on its own. Fix the first FAIL, reload, repeat.</p>
+  <div id="output"></div>
+  <div class="note">
+    A function you have not written yet throws instead of failing quietly — if the
+    page stops partway, open the Console and read the error. It names the function.
+  </div>
+  <script src="data.js"></script>
+  <script src="analysis.js"></script>
+  <script src="check.js"></script>
+</body>
+</html>
