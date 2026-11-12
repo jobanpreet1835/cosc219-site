@@ -84,7 +84,7 @@ export function createTrailItem(trail) {
    container.replaceChildren(...) empties and refills in one step.
    ---------------------------------------------------------------------- */
 
-export function renderTrails(trails, container) {
+export function renderTrails(trails, ul) {
   const items = trails.map(trail => createTrailItem(trail));
 
   ul.replaceChildren(...items);
