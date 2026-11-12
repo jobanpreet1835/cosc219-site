@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trail Tracker — COSC 219 Lab 7</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Trail Tracker</h1>
+
+    <form id="add-form">
+      <div class="field">
+        <label for="name">Trail name</label>
+        <input type="text" id="name" name="name" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="km">Distance (km)</label>
+        <input type="number" id="km" name="km" step="0.1" min="0">
+      </div>
+      <button type="submit">Add trail</button>
+    </form>
+
+    <p id="error" class="error" role="alert"></p>
+    <p id="summary" class="summary"></p>
+
+    <ul id="trail-list"></ul>
+
+    <button type="button" id="clear" class="ghost">Clear all</button>
+  </main>
+</body>
+</html>
