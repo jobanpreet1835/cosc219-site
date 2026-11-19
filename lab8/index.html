@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trail Browser — needs fixing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Browser</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Trail Browser</h1>
+
+    <h2>Filter and sort</h2>
+
+    <form id="controls">
+      <label for="search">Search trails</label>
+      <input type="text" id="search" placeholder="Search by name">
+
+      <label for="rating">Rating</label>
+      <select id="rating">
+        <option value="all">All</option>
+        <option value="easy">Easy</option>
+        <option value="moderate">Moderate</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button type="submit">Apply</button>
+    </form>
+
+    <p id="count"></p>
+    <ul id="results"></ul>
+  </main>
+
+  <footer>
+    <p>COSC 219 consolidation exercise.</p>
+  </footer>
+
+</body>
+</html>
