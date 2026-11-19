@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 8 — what is still broken?</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height:1.55; margin:2rem auto;
+           max-width:44rem; padding:0 1rem; color:#12181F; }
+    h1 { font-size:1.5rem; margin-bottom:.2rem; }
+    .sub { color:#6B7885; margin-top:0; }
+    h2 { font-size:.95rem; font-family:monospace; color:#2E5AAC;
+         margin:1.4rem 0 .3rem; border-bottom:1px solid #DCE1E6; padding-bottom:.2rem; }
+    .res { margin:.3rem 0 .1rem; font-size:.92rem; }
+    .pass { color:#1B7F5A; }
+    .fail { color:#A62B23; font-weight:600; }
+    .hint { margin:0 0 .5rem 1.2rem; font-size:.85rem; color:#6B7885; font-style:italic; }
+    .summary { margin-top:1.4rem; padding:.7rem 1rem; background:#F4F6F7;
+               border-left:3px solid #2E5AAC; font-weight:600; }
+    .note { background:#FBF1E4; border-left:3px solid #B9700A;
+            padding:.7rem 1rem; margin:1.2rem 0; font-size:.9rem; }
+    #results, #count, #controls { display:none; }
+  </style>
+</head>
+<body>
+  <h1>What is still broken?</h1>
+  <p class="sub">Eight faults. This page tells you which remain — not where they are.</p>
+
+  <div class="note">
+    This page loads the app to test it, so the app's own markup is hidden below.
+    Open <code>index.html</code> in another tab to see and use the real thing.
+  </div>
+
+  <div id="check-output"></div>
+
+  <!-- the app's markup, needed so app.js can run -->
+  <form id="controls">
+    <input type="text" id="search">
+    <select id="rating"><option value="all">All</option></select>
+  </form>
+  <p id="count"></p>
+  <ul id="results"></ul>
+
+  <script type="module" src="check.js"></script>
+</body>
+</html>
