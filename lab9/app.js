@@ -19,7 +19,8 @@ import { fetchTrail, delay } from "./api.js";
    ---------------------------------------------------------------------- */
 
 export async function getTrailName(id) {
-
+  const trail = await fetchTrail(id);
+  return trail.name;
 }
 
 
@@ -39,7 +40,8 @@ export async function getTrailName(id) {
    ---------------------------------------------------------------------- */
 
 export async function getTrailNames(ids) {
-
+  const promises = ids.map(id => getTrailName(id));
+  return await Promise.all(promises);
 }
 
 
@@ -56,7 +58,12 @@ export async function getTrailNames(ids) {
    ---------------------------------------------------------------------- */
 
 export async function getTrailSafe(id) {
-
+  try {
+    const trail = await fetchTrail(id);
+    return trail;
+  } catch (error) {
+    return null;
+  }
 }
 
 
