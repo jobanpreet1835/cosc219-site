@@ -81,7 +81,21 @@ export async function getTrailSafe(id) {
    ---------------------------------------------------------------------- */
 
 export async function loadSome(ids) {
+  const promises = ids.map(id => getTrailName(id));
+  const results = await Promise.allSettled(promises);
 
+  const loaded = [];
+  let failed = 0;
+
+  for(const result of results){
+    if(result.status === "fulfilled"){
+      loaded.push(result.value);
+    } else {
+      failed++;
+    }
+  }
+
+  return {loaded, failed};
 }
 
 
@@ -97,7 +111,11 @@ export async function loadSome(ids) {
    ---------------------------------------------------------------------- */
 
 export async function withTimeout(promise, ms) {
+  const timeout = delay(ms).then(() => {
+    throw new Error("Timed out");
+  });
 
+  return await Promise.race([promise, timeout]);
 }
 
 
@@ -118,5 +136,17 @@ export async function withTimeout(promise, ms) {
    ---------------------------------------------------------------------- */
 
 export function uiState({ loading, error, items }) {
+  if(loading){
+    return "loading";
+  }
 
+  if(error){
+    return "error";
+  }
+
+  if(!items || items.length === 0){
+    return "empty";
+  }
+
+  return "loaded";
 }
